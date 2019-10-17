@@ -15,7 +15,8 @@ sudo nano /etc/dhcpcd.conf
 ::static domain_name_servers=192.168.1.1  
 
 //autostart binarie  
-sudo crontab -e @reboot sleep 10 && cd /home/pi/openFrameworks/apps/myApps/<yourAppFile>/bin && ./<yourAppName>
+sudo crontab -e    
+@reboot sleep 10 && cd /home/pi/openFrameworks/apps/myApps/<yourAppFile>/bin && ./<yourAppName>
 
 //do not set network to sleep  
 sudo iw wlan0 set power_save off  
